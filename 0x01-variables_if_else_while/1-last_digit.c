@@ -3,9 +3,9 @@
 #include <time.h>
 
 /*
- * main - print the last digit of 
- * Return: 0
- */
+* main - prints the string and last digit of number if greater and less than  
+* Return: 0
+*/
 
 int main(void)
 {
