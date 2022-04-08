@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
-/*
+/**
 * main - prints the string and last digit of number if greater and less than  
 * Return: 0
 */
