@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - putchar and prints all possible different combinations of 2 digits seperated by a comma
+ * main - putchar and prints all possible different combinations
+ * of 2 digits seperated by a comma
  * Return: 0
  */
 
