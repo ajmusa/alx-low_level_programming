@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - putchar and prints all possible combinations of 
+ * main - putchar and prints all possible combinations of
  * two two-digit numbers from 0 to 99.
  * Return: Always 0.
  */
