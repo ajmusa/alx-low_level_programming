@@ -2,7 +2,7 @@
 /**
  * main - checks for lowercase or uppercase letters
  *
- * _isalpha - a function that checks for alphabetic characters
+ *_isalpha - a function that checks for alphabetic characters
  *
  *@c: evaluates c and inserts it through the conditional
  *
