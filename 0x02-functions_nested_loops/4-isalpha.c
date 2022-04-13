@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main: checks for lowercase or uppercase letters
+ * main - checks for lowercase or uppercase letters
  *
- * _isalpha: a function that checks for alphabetic characters
+ * _isalpha - a function that checks for alphabetic characters
  *
- * @c: evaluates c and inserts it through the conditional
+ *@c: evaluates c and inserts it through the conditional
  *
  * Return: 1 if c is a uppercase or lowercase
  */
