@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- *_isalpha: a function that checks for alphabetic characters
+ * main: checks for lowercase or uppercase letters
  *
- *@c: evaluates c and inserts it through the conditional
+ * _isalpha: a function that checks for alphabetic characters
  *
- *main: checks for lowercase or uppercase letters
- *Return: 1 if c is a uppercase or lowercase
+ * @c: evaluates c and inserts it through the conditional
+ *
+ * Return: 1 if c is a uppercase or lowercase
  */
 
 int _isalpha(int c)
