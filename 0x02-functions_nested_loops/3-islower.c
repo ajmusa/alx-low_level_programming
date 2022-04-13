@@ -1,11 +1,9 @@
 #include "main.h"
 /**
- * c: evaluates ascii value of the letter and 
- * gets it through the conditional
- * 
  * _islower: a function that checks for lowercase characters
  *
- * main: a function that checks for lowercase characters
+ * @c: evaluates ascii value of the letter and
+ * gets it through the conditional
  *
  * Return: 1 if c is lowercase, 0 if otherwise.
  */
