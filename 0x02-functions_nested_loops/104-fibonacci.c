@@ -32,7 +32,7 @@ int main(void)
 	{
 		h0 = h4 + h2;
 		h5 = h3 + h1;
-		printf("%ld""%ld", h0, h5);
+		printf("%ld", "%ld", h0, h5);
 		if (i != 96)
 		{
 			printf(",");
