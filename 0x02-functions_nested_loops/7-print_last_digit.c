@@ -11,18 +11,18 @@
 
 int print_last_digit(int r)
 {
-	int remainder = r % 10;
+	int remainder;
 
 	if (r < 0)
 	{
-		r = r * -1;
-
-		_putchar(r % 10 + '0');
-		return (r % 10);
+		remainder = (-1 * (r % 10));
+		_putchar(remainder + '0');
+		return (remainder);
 	}
 	else
 	{
+		remainder = (r % 10);
 		_putchar(remainder + '0');
-		return (r % 10);
+		return (remainder);
 	}
 }
