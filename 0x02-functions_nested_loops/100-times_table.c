@@ -4,7 +4,7 @@
  * sarting with 0.
  *
  * main - prints the times table of the input
- * 
+ *
  * @n: The value of the times table to be printed.
  *
  * Return: valur is void
