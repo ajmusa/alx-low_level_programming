@@ -8,41 +8,43 @@
 
 int main(void)
 {
-	long int i, f, s, n, h2, h1, h3, h4, h0, h5;
+	int c, boolean, boolean2;
+	long int n1, n2, fn, fn2, n11, n22;
 
-	f = 0;
-	s = 1;
-	i = 0;
-	while (i < 91)
+	n1 = 1;
+	n2 = 2;
+	boolean =  boolean2 = 1;
+	printf("%ld, %ld", n1, n2);
+	for (c = 0; c < 96; c++)
 	{
-		n = f + s;
-		f = s;
-		s = n;
-		printf("%ld", n);
-		printf(",");
-		printf(" ");
-		i++;
-	}
-
-	h4 = f / 1000000000;
-	h3 = f % 1000000000;
-	h2 = s / 1000000000;
-	h1 = s % 1000000000;
-	while (i < 97)
-	{
-		h0 = h4 + h2;
-		h5 = h3 + h1;
-		printf("%ld %ld", h0, h5);
-		if (i != 96)
+		if (boolean)
 		{
-			printf(",");
-			printf(" ");
+			fn = n1 + n2;
+			printf(", %ld", fn);
+			n1 = n2;
+			n2 = fn;
 		}
-		h4 = h2;
-		h3 = h1;
-		h2 = h0;
-		h1 = h5;
-		i++;
+		else
+		{
+			if (boolean2)
+			{
+				n11 = n1 % 1000000000;
+				n22 = n2 % 1000000000;
+				n1 = n1 / 1000000000;
+				n2 = n2 / 1000000000;
+				boolean2 = 0;
+			}
+			fn2 = (n11 + n22);
+			fn = n1 + n2 + (fn2 / 1000000000);
+			printf(", %ld", fn);
+			printf("%ld", fn2 % 1000000000);
+			n1 = n2;
+			n11 = n22;
+			n2 = fn;
+			n22 = (fn2 % 1000000000);
+		}
+		if (((n1 + n2) < 0) && boolean == 1)
+			boolean = 0;
 	}
 	printf("\n");
 	return (0);
