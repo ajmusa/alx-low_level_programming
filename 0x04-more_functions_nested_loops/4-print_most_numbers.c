@@ -4,8 +4,7 @@
  *not printing 2 and 4, followed by a new line
  *
  *main - prints numbers from 0 to 9, not printing 2 and 4
- *@i: parameter stores value of i through the condition
- * Return: value will be 0
+ *Return: value will be 0
  */
 
 void print_most_numbers(void)
