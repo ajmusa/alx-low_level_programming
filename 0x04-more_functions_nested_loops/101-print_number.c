@@ -1,5 +1,23 @@
-#include <stdio.h>
 #include "main.h"
+/**
+ *power - getting the power of the integer.
+ *@i: the variable i will be decrementing
+ *Return: an integer of value t will be returned.
+ */
+
+int power(int i)
+{
+	int t;
+
+	t = 10;
+	while (i > 1)
+	{
+		t *= 10;
+		i--;
+	}
+	return (t);
+}
+
 /**
  *print_number - prints out an integer.
  *@n: The variable n stores tha value that is being evaluated.
@@ -8,29 +26,29 @@
 
 void print_number(int n)
 {
-	unsigned int c, s, count;
+	long c, s;
 
+	c = 1;
 	if (n < 0)
 	{
-		_putchar(45);
 		n *= -1;
+		_putchar(45);
 	}
-	else
+	while (n / power(c) >= 10)
 	{
-		c = n;
+		c++;
 	}
-
-	s = c;
-	count = 1;
-
-	while (s > 9)
+	s = n / power(c);
+	_putchar(s + '0');
+	while (c > 1)
 	{
-		s /= 10;
-		count *= 10;
+		s = n % power(c--);
+		s = s / power(c);
+		_putchar(s + '0');
 	}
-
-	for (; count >= 1; count /= 10)
+	s = n % 10;
+	if (n != 0)
 	{
-		_putchar(((c / count) % 10) + 48);
+		_putchar(s + '0');
 	}
 }
