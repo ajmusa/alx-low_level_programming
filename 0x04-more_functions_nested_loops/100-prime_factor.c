@@ -8,19 +8,17 @@
 
 int main(void)
 {
-	long num, a;
+	long int n, fp;
 
-	a = 2;
-	num = 612852475143;
-	while (a < sqrt(num))
+	n = 612852475143;
+	for (fp = 2; fp <= n; fp++)
 	{
-		while (num % a == 0)
+		if (n % fp == 0)
 		{
-			num = num / a;
-			printf("%ld %ld\n", num, a);
+			n /= fp;
+			fp--;
 		}
-		a++;
 	}
-	printf("%ld\n", num);
+	printf("%ld\n", fp);
 	return (0);
 }
