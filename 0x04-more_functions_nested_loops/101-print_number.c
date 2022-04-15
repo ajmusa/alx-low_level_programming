@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *print_number - prints out an integer.
  *@n: The variable n stores tha value that is being evaluated.
- *Return: the value of 0 will be returned.
+ *Return: the value will be 0
  */
 
 void print_number(int n)
@@ -11,8 +12,8 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		n *= -1;
 		_putchar(45);
+		n *= -1;
 	}
 	else
 	{
