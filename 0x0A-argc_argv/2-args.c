@@ -2,22 +2,19 @@
 #include <stdlib.h>
 
 /**
- * main - prints all arguments it receives per line.
+ * main - print all arguments it receives per line including first one.
  * @argc: number of arg in cl
  * @argv: array of arg in cl
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, __attribute__ ((unused)) char *argv[])
 {
-	if (argc < 3)
+	int i = 0;
+
+	for (; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	else
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
