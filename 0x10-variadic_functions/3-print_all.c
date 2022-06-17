@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
  * print_all - a prog or func that prints anything.
  * @format: a list of types of arguments passed to the function.
@@ -20,12 +19,10 @@ void print_all(const char * const format, ...)
 		while (t_arg[j])
 		{
 			if (format[i] == t_arg[j] && c)
-			{
 				printf(", ");
 				break;
-			} j++;
+			j++;
 		}
-
 		switch (format[i])
 		{
 			case 'c':
